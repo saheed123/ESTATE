@@ -1,0 +1,12 @@
+require('./model/database');
+const route = require('./route/route');
+const express = require('express');
+const morgan = require('morgan');
+require('dotenv').config();
+const PORT = process.env.PORT;
+const app = express();
+app.use(morgan('tiny'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use('/', route);
+app.listen(PORT, console.log(`you are logged in with port ${PORT}`));

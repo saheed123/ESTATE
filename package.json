@@ -1,0 +1,18 @@
+{
+  "name": "realestatemanagementsystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "estate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "estate"
+  },
+  "author": "akinade saheed",
+  "license": "ISC",
+  "devDependencies": {
+    "moment": "^2.29.4"
+  }
+}
